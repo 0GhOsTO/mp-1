@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the Page*/
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*Header*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: bisque;
+    color: black;
+}
+
+#container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    background-color: bisque;
+}
