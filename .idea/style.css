@@ -84,8 +84,9 @@ footer {
 footer a{
     color: white;
 }
-
-@media screen and (max-width: 1000px){
+/*for the smaller screens*/
+/*-----------------------------------------------*/
+@media screen and (max-width: 750px){
     #container{
         display: flex;
         flex-direction: column;
