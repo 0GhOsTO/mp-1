@@ -14,9 +14,17 @@ header{
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
-    background-color: bisque;
-    color: black;
+    background-color: #262626;
+    color: #D9E5E5;
     align-items: left;
+}
+
+header h1{
+    font-family: 'Sans Serif Collection', sans-serif;
+}
+
+#BU {
+    color: #D9E5E5;
 }
 
 #container{
@@ -24,6 +32,7 @@ header{
     display: flex;
     flex-direction: row;
     position:relative;
+    /*For testing*/
     background-color: bisque;
 }
 
@@ -33,11 +42,12 @@ header{
 
 
 nav ul{
+    font-family: 'Sans Serif Collection', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: blanchedalmond;
-    font-size: calc(10px + 2vw);
+    background-color: #262626;
+    font-size: calc(3px + 2vw);
     list-style: none;
     padding-left: 0;
 }
@@ -45,19 +55,23 @@ nav ul{
 nav li{
     text-align: center;
     font-size: calc(3px + 2vw);
-    background-color: whitesmoke;
-    padding: 2vh 0%;
-    margin: 2vh 3%;
+    background-color: #000000;
+    padding: 1vh 0%;
+    margin: 1vh 3%;
+    border-radius: 10px;
 }
 
 nav a{
+    max-width: 30%;
+    text-align: center;
     text-decoration: none;
+    color: #D9E5E5;
 }
 
 main{
     display: flex;
     width: 70%;
-    background-color: cadetblue;
+    background-color: #1A1A1A;
     flex-direction: column;
     /*padding: 2vh 2vw;*/
 }
@@ -65,10 +79,12 @@ main{
 main p{
     margin: 0 0vw;
     font-size: calc(2vw);
+    color: #D9E5E5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #profile-image{
-    max-width: 100%
+    max-width: 80%
 }
 
 #main-image{
@@ -83,7 +99,7 @@ main p{
 }
 
 footer {
-    background-color: cadetblue;
+    background-color: #262626;
     color: whitesmoke;
     flex-direction: row;
     justify-content: space-evenly;
