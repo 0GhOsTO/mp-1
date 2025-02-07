@@ -7,7 +7,7 @@
     width: 80vw;
     margin: 0 auto;
     background-color: #262626;
-    min-heigh: 110vh;
+    min-height: 110vh;
 }
 
 header{
@@ -80,11 +80,13 @@ main h1{
 
 
 #calculator{
+
     width: 100%;
     align-items: center;
 }
 
 #background-calc{
+
     font-family: calcFont;
     max-width: 100%;
     min-height: 70vh;
@@ -94,22 +96,61 @@ main h1{
     border-radius: 10px;
     background-color: #D9E5E5;
     background-opacity: 0.7;
-    padding: 1vh 1vh;
-    margin: 1vh 30%;
+    padding: 1vh 1vw;
+    margin: 4vh 30%;
+    border-width: thin;
+    border-color: #D9E5E5;
     box-shadow: 0 0 50px black;
+    justify-content: space-evenly;
+    border-width: thick;
 }
 
-#first number{
-    font-size: calc(3px + 2vw);
+input{
+    max-width: 20%;
+    font-size: calc(2vw + 1px);
     font-family: calcFont;
+    text-align: center;
 }
-#secoond number{
-    font-size: calc(3px + 2vw);
+#result-content{
+    align-items: center;
+}
+
+
+#result{
+    margin: 4vh 0;
+    max-width: 100%;
+    text-align: center;
+    font-size: calc(2vw + 1px);
+}
+
+button{
     font-family: calcFont;
+    font-size: calc(2vw + 1px);
+    margin: 0.5vh 0.5vw;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calcFont;
+    font-size: calc(2vw + 1px);
+}
+
+#buttons2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calcFont;
+    font-size: calc(2vw + 1px);
+}
+
+#darrow{
+    font-size: calc(4vw + 1px);
 }
 
 #numType{
-
+    font-size: calc(2vw + 1px);
 }
 
 footer {
@@ -159,4 +200,10 @@ footer {
         margin: 1% 0.5%;
         list-style: none;
     }
-}
+
+    #background-calc{
+        min-height: 50%;
+    }
+
+
+    }
