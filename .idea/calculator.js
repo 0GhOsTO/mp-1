@@ -58,7 +58,7 @@ function powerUp(){
 }
 
 function negativeNum(result){
-    res = document.getElementById("result");
+    res = document.getElementById("background-calc");
     if(result >= 0){
         res.style.background = "green";
         res.style.color = "white";
