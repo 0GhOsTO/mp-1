@@ -98,7 +98,8 @@ main h1{
     background-opacity: 0.7;
     padding: 1vh 1vw;
     margin: 4vh 30%;
-    border-width: thin;
+    border-style: solid;
+    border-width: 20px;
     border-color: #D9E5E5;
     box-shadow: 0 0 50px black;
     justify-content: space-evenly;
@@ -201,8 +202,15 @@ footer {
         list-style: none;
     }
 
+    #calculator{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
     #background-calc{
         min-height: 50%;
+        width: 70%;
     }
 
 
