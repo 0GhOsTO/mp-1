@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #262626
+}
+
+#main-content{
+    color: white
+}
+
+body ul{
+    display: felx;
+    flex-direction: row
+}

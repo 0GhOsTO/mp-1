@@ -3,33 +3,32 @@
     box-sizing: border-box;
 }
 
-/*Centering the Page*/
 #page-wrapper{
     width: 80vw;
     margin: 0 auto;
-    min-height: 110vh;
+    background-color: #262626;
+    min-heigh: 110vh;
 }
 
-/*Header*/
 header{
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
     background-color: #262626;
     color: #D9E5E5;
-    align-items: left;
+    align-items: left
 }
 
 header h1{
     font-family: 'Sans Serif Collection', sans-serif;
 }
 
-
 #container{
+    min-height: 110vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    position:relative;
+    position: relative;
     /*For testing*/
     background-color: #262626;
 }
@@ -37,7 +36,6 @@ header h1{
 #navigation{
     width: 30%
 }
-
 
 nav ul{
     display: flex;
@@ -65,34 +63,53 @@ nav a{
     color: #D9E5E5;
 }
 
-main{
-    display: flex;
+main {
     width: 70%;
-    background-color: #1A1A1A;
-    flex-direction: column;
-    padding: 2vh 2vw;
+    align-self: center;
 }
 
-main p{
-    margin: 0 0vw;
-    font-size: calc(2vw);
+main h1{
     color: #D9E5E5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
-#profile-image{
-    max-width: 100%
+@font-face {
+    font-family: calcFont;
+    src: url("../.idea/calculatorFont.ttf");
 }
 
-#main-image{
-    width: 500%;
-    margin: 1vh 1vw;
-}
 
-#main{
+#calculator{
     width: 100%;
+    align-items: center;
+}
+
+#background-calc{
+    font-family: calcFont;
+    max-width: 100%;
+    min-height: 70vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #D9E5E5;
+    background-opacity: 0.7;
+    padding: 1vh 1vh;
+    margin: 1vh 30%;
+    box-shadow: 0 0 50px black;
+}
+
+#first number{
+    font-size: calc(3px + 2vw);
+    font-family: calcFont;
+}
+#secoond number{
+    font-size: calc(3px + 2vw);
+    font-family: calcFont;
+}
+
+#numType{
+
 }
 
 footer {
@@ -102,16 +119,16 @@ footer {
     justify-content: space-evenly;
 }
 
-footer a{
-    color: white;
-}
-/*for the smaller screens*/
-/*-----------------------------------------------*/
-@media screen and (max-width: 750px){
 
+@media screen and (max-width: 750px){
     header{
         display: flex;
         align-items: center;
+    }
+
+    /*---main---*/
+    main h1{
+        text-align: center;
     }
 
     #container{
@@ -120,10 +137,12 @@ footer a{
         flex-direction: column;
         content-alignment: center;
     }
+
     #navigation{
         width: 100%;
         max-width: 100%;
     }
+
     nav ul{
         display: flex;
         flex-direction: row;
@@ -132,57 +151,12 @@ footer a{
 
     nav li{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         font-size: 2vw;
         text-align: center;
-        padding: 1% 0.5%;
-        margin: 0.5% 0.5%;
+        padding: 0% 0%;
+        margin: 1% 0.5%;
         list-style: none;
     }
-
-    main{
-        width: 100%;
-    }
-
-    main p{
-        font-size: calc(3vw);
-    }
-
-    #main-image{
-        align-content: center;
-        align-items: center;
-    }
-    #profile-image{
-        max-width: 100%
-    }
-
-    nav a{
-        text-decoration: none;
-    }
-
-
 }
-
-@media screen and (max-width: 1000px){
-
-    main{
-        max-width: 100%;
-    }
-
-    #main{
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #main-image{
-        align-self: center;
-        max-width: 80%;
-    }
-
-    main p{
-        text-align: left;
-
-    }
-}
-

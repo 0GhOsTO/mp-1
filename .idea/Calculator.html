@@ -3,24 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Calculator" content="Website showing Andrew Cho's Calculator Project">
-
+    <link type = "text/css" rel="stylesheet" href="calculator.css">
     <title>Calculator | Andrew Cho</title>
 </head>
 <body>
-    <h1>Calculator</h1>
-    <h2><a href = "index.html">Home</a></h2>
-    <label>Type the Number: </label>
-    <input id="first number"></input>
-    <input id="second number"></input>
-    <button onclick="plus()">+</button>
-    <button onclick="minus()">-</button>
-    <button onclick="divide()">/</button>
-    <button onclick="multiply()">*</button>
+    <div id = "page-wrapper">
+        <header>
+            <h1>Andrew Cho</h1>
+            <div id="Logo"><p id = "BU">Boston University Sophomore</p></div>
+        </header>
 
-    <div id = "result-content">
-        <p id = "result">answwer will appear hear</p>
+        <div id = "container">
+            <div id="navigation">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "../.idea/Experience.html">Experience</a></li>
+                        <li><a href = "../.idea/Leadership%20Positions.html">Leadership Positions</a></li>
+                        <li><a href = "../.idea/Certifications.html">Certifications</a></li>
+                        <li><a href = "../.idea/Education.html">Education</a></li>
+                        <li><a href = "../.idea/SkillsAndInterests.html">Skills & Interests</a></li>
+                        <li><a href="../.idea/Project.html" > Project </a></li>
+                        <li><a href="../.idea/Calculator.html" > Calculator </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main>
+                <div id = "calculator">
+                    <h1>Calculator</h1>
+                    <div id = "background-calc">
+                        <label id = "numType">Type the Number: </label>
+                        <input id="first number"></input>
+
+                        <div id="buttons">
+                            <button onclick="plus()">+</button>
+                            <button onclick="minus()">-</button>
+                            <button onclick="divide()">/</button>
+                            <button onclick="multiply()">*</button>
+                            <button onclick="powerUp()">power</button>
+                            <button onclick="clearInput()">CLEAR</button>
+                        </div>
+
+                        <input id="second number"></input>
+
+                        <div id = "result-content">
+                            <p id = "result">Answer will appear hear</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        <footer>
+            <p>All Rights Reserved by Andrew Cho <a href="../credits/credits.html"> Credits</a> &copy;</p>
+        </footer>
     </div>
-
     <script src="calculator.js"></script>
 </body>
 </html>

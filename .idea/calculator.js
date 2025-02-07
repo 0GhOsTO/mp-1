@@ -4,6 +4,7 @@ function plus() {
     if (isNotNumber(firstNum, secondNum) === false) {
         let ans = Number(firstNum) + Number(secondNum);
         console.log("Answer is:", ans);
+        negativeNum(ans);
         document.getElementById("result").innerHTML = ans;
     }
 }
@@ -14,6 +15,7 @@ function minus(){
     if (isNotNumber(firstNum, secondNum) === false) {
         let ans = Number(firstNum) - Number(secondNum);
         console.log("Answer is:", ans);
+        negativeNum(ans);
         document.getElementById("result").innerHTML = ans;
     }
 }
@@ -24,6 +26,7 @@ function divide(){
     if (isNotNumber(firstNum, secondNum) === false) {
         let ans = Number(firstNum) / Number(secondNum);
         console.log("Answer is:", ans);
+        negativeNum(ans);
         document.getElementById("result").innerHTML = ans;
     }
 }
@@ -34,8 +37,42 @@ function multiply(){
     if (isNotNumber(firstNum, secondNum) === false) {
         let ans = Number(firstNum) * Number(secondNum);
         console.log("Answer is:", ans);
+        negativeNum(ans);
         document.getElementById("result").innerHTML = ans;
     }
+}
+
+function powerUp(){
+    const firstNum = document.getElementById("first number").value;
+    const secondNum = document.getElementById("second number").value;
+    let initial = 1
+    if (isNotNumber(firstNum, secondNum) === false) {
+        for (let i = 1; i <= secondNum; i++){
+            initial *= firstNum
+        }
+        console.log("Answer is:", initial);
+        negativeNum(initial);
+        document.getElementById("result").innerHTML = initial;
+    }
+
+}
+
+function negativeNum(result){
+    res = document.getElementById("result");
+    if(result >= 0){
+        res.style.background = "green";
+        res.style.color = "white";
+    }
+    if(result < 0){
+        res.style.background = "red";
+        res.style.color = "white";
+    }
+}
+
+function clearInput(){
+    document.getElementById("first number").value="";
+    document.getElementById("second number").value="";
+    document.getElementById("result").innerHTML = "Clear!";
 }
 
 function isNotNumber(num1, num2){

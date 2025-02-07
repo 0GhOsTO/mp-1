@@ -3,12 +3,14 @@
     box-sizing: border-box;
 }
 
+/*Centering the Page*/
 #page-wrapper{
     width: 80vw;
     margin: 0 auto;
     min-height: 110vh;
 }
 
+/*Header*/
 header{
     display: flex;
     flex-direction: column;
@@ -17,16 +19,17 @@ header{
     color: #D9E5E5;
     align-items: left;
 }
+
 header h1{
     font-family: 'Sans Serif Collection', sans-serif;
 }
 
+
 #container{
-    min-height: 110vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: relative;
+    position:relative;
     /*For testing*/
     background-color: #262626;
 }
@@ -35,10 +38,12 @@ header h1{
     width: 30%
 }
 
+
 nav ul{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     background-color: #262626;
     font-size: calc(3px + 2vw);
     list-style: none;
@@ -61,9 +66,36 @@ nav a{
     color: #D9E5E5;
 }
 
+main{
+    min-height: 110vh;
+    display: flex;
+    width: 70%;
+    background-color: #1A1A1A;
+    flex-direction: column;
+    padding: 2vh 2vw;
+}
 
+main p{
+    margin: 0 0vw;
+    font-size: calc(2vw);
+    color: #D9E5E5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+#profile-image{
+    max-width: 100%
+}
 
+#main-image{
+    width: 500%;
+    margin: 1vh 1vw;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
 footer {
     background-color: #262626;
@@ -72,52 +104,16 @@ footer {
     justify-content: space-evenly;
 }
 
-main{
-    width: 70%
+footer a{
+    color: white;
 }
+/*for the smaller screens*/
+/*-----------------------------------------------*/
+@media screen and (max-width: 750px){
 
-main a{
-    text-decoration: none;
-    color: #D9E5E5;
-}
-
-main h1{
-    font-family: 'Sans Serif Collection', sans-serif;
-    font-size: calc(3px + 3vw);
-    color: #D9E5E5;
-}
-
-main ul{
-    max-width: 100%
-}
-
-main li{
-    max-width: 70%;
-    color: #D9E5E5;
-}
-
-main img{
-    max-width: 40vw;
-}
-
-#photoLi{
-    list-style-type: none;
-}
-
-#wordLi{
-    font-size: calc(3px + 3vw);
-}
-
-
-@media screen and (max-width: 750px) {
     header{
         display: flex;
         align-items: center;
-    }
-
-    /*---main---*/
-    main h1{
-        text-align: center;
     }
 
     #container{
@@ -126,12 +122,10 @@ main img{
         flex-direction: column;
         content-alignment: center;
     }
-
     #navigation{
         width: 100%;
         max-width: 100%;
     }
-
     nav ul{
         display: flex;
         flex-direction: row;
@@ -144,8 +138,53 @@ main img{
         align-items: center;
         font-size: 2vw;
         text-align: center;
-        padding: 0% 0%;
-        margin: 1% 0.5%;
+        padding: 1% 0.5%;
+        margin: 0.5% 0.5%;
         list-style: none;
     }
+
+    main{
+        width: 100%;
+    }
+
+    main p{
+        font-size: calc(3vw);
+    }
+
+    #main-image{
+        align-content: center;
+        align-items: center;
+    }
+    #profile-image{
+        max-width: 100%
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+
 }
+
+@media screen and (max-width: 1000px){
+
+    main{
+        max-width: 100%;
+    }
+
+    #main{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #main-image{
+        align-self: center;
+        max-width: 80%;
+    }
+
+    main p{
+        text-align: left;
+
+    }
+}
+
