@@ -75,7 +75,7 @@ main h1{
 
 @font-face {
     font-family: calcFont;
-    src: url("../.idea/calculatorFont.ttf");
+    src: url("calculatorFont.ttf");
 }
 
 
